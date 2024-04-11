@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <div class="main-div">
+        <h1>To register yourself please fill the form</h1>
+        <form id="userdata" action="" class="form">
+       <div>
+           
+            <label class>First Name</label>
+            <input type="text" class="fname" id="fname" placeholder="Enter FirstName">
+        </div>
+        <div>
+            <label for="LastName" class>Last Name</label>
+            <input type="text" id="lname" placeholder="Enter LastName">
+        </div>
+        <div>
+
+            <label for="exampleInputEmail1" class>Email address</label>
+            <input type="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+
+            
+<div>
+
+            <label for="ContactNumber" class>Contact Number</label>
+            <input type="phone" id="phone" placeholder="Enter Contact Number">
+
+        </div>
+        <div>
+
+
+            <label for="City" class>City</label>
+            <input type="text" id="city" placeholder="Enter City">
+
+
+        </div>
+        <div>
+
+
+            <label for="State" class>State</label>
+            <input type="text" id="state" placeholder="Enter State">
+
+        </div>
+        <div>
+
+            <button type="submit" value="submit" onclick="addData()">Submit</button>
+        </div>
+        </form>
+        <hr>
+        <table class="usertable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>phone</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="usertable"></tbody>
+
+        </table>
+
+        <script src="form.js"></script>
+</body>
+
+</html>
